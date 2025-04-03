@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Buzzwords & Anglizismen für Medieninformatik ---
     // Wähle mehr als 25 aus, damit jedes Spiel anders ist
     const buzzwordsPool = [
-        "KI", "Machine Learning", "Deep Learning", "Generative AI", "Prompt Engineering", "Storyboarding",
+        "KI", "Machine Learning", "Deep Learning", "Generative AI", "Prompt Engineering", "Vibe Coding", "Storyboarding",
         "LLM", "Cloud Native", "Edge Computing", "Big Data", "Data Science", "Synergieeffekte", "Reputation System",
         "UX Design", "UI Engineering", "Interaction Design", "Agile", "Scrum", "Disruptiv", "User Agency",
         "DevOps", "Microservices", "API First", "WebAssembly", "PWA","Game Engine", "Extrameile gehen", "Soft Skills",
