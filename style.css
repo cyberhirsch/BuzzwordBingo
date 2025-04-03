@@ -129,7 +129,7 @@ h2 {
 /* Responsive Anpassungen - Dark Theme */
 @media (max-width: 480px) {
     body {
-        padding: 15px; /* Etwas mehr Padding auf Mobile */
+        padding: 2px; /* Etwas mehr Padding auf Mobile */
     }
     h1 {
         font-size: 1.7em;
