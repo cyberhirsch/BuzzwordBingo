@@ -139,7 +139,7 @@ h2 {
         margin-bottom: 20px;
     }
     #bingo-board {
-        width: 95%;
+        width: 100%;
         gap: 4px; /* Abstand angepasst */
         margin-bottom: 20px;
     }
