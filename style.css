@@ -1,0 +1,123 @@
+/* Generelle Styles */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* Bingo-Board Styling */
+#bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 Spalten */
+    gap: 5px; /* Kleiner Abstand zwischen Zellen */
+    width: 90%;
+    max-width: 600px; /* Maximale Breite für größere Bildschirme */
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1; /* Sorgt dafür, dass das Board quadratisch bleibt */
+}
+
+/* Styling der einzelnen Bingo-Zellen */
+.bingo-cell {
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px; /* Innenabstand */
+    font-size: clamp(0.6rem, 2.5vw, 1rem); /* Responsive Schriftgröße */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+    overflow: hidden; /* Verhindert Textüberlauf bei sehr langen Wörtern */
+    word-break: break-word; /* Bricht lange Wörter um */
+    hyphens: auto; /* Automatische Silbentrennung */
+    user-select: none; /* Verhindert Textauswahl beim Klicken */
+}
+
+.bingo-cell:active {
+    transform: scale(0.95); /* Kleiner Effekt beim Klicken */
+}
+
+/* Styling für markierte Zellen */
+.bingo-cell.marked {
+    background-color: #3498db; /* Blaue Markierung */
+    color: white;
+    font-weight: bold;
+    text-decoration: line-through; /* Durchstreichen */
+    text-decoration-color: #e74c3c;
+    text-decoration-thickness: 2px;
+}
+
+/* Button Styling */
+#reset-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+#reset-button:hover {
+    background-color: #c0392b;
+}
+
+/* Info Text */
+.info {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Responsive Anpassungen für kleinere Bildschirme */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    #bingo-board {
+        width: 95%;
+        gap: 3px;
+    }
+    /* .bingo-cell {
+       font-size: 0.7em;  /* Kleinere Schrift auf Mobilgeräten - clamp() macht das schon gut */
+    /* } */
+    #reset-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
