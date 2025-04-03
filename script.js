@@ -8,17 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Buzzwords & Anglizismen für Medieninformatik ---
     // Wähle mehr als 25 aus, damit jedes Spiel anders ist
     const buzzwordsPool = [
-        "KI / AI", "Machine Learning", "Deep Learning", "Generative AI", "Prompt Engineering",
-        "LLM", "Cloud Native", "Edge Computing", "Big Data", "Data Science",
-        "UX Design", "UI Engineering", "Interaction Design", "Agile", "Scrum",
-        "DevOps", "Microservices", "API First", "WebAssembly", "PWA",
-        "SPA", "React / Vue / Angular", "Cybersecurity", "Blockchain", "NFT",
-        "Metaverse", "AR / VR / MR", "Digital Twin", "Low-Code / No-Code", "Gamification",
-        "Sustainable IT", "Accessibility", "Responsive Design", "Containerization", "Docker / K8s",
-        "IoT", "HCI / MMI", "NLP", "Computer Vision", "Headless CMS",
-        "Serverless", "Full-Stack", "Design System", "User Research", "Prototyping",
-        "Wireframing", "Scrum Master", "Product Owner", "Sprint", "CI / CD",
-        "Git Workflow", "State Management", "Web Performance", "SEO", "Data Visualization"
+        "KI", "Machine Learning", "Deep Learning", "Generative AI", "Prompt Engineering", "Storyboarding",
+        "LLM", "Cloud Native", "Edge Computing", "Big Data", "Data Science", "Synergieeffekte", "Reputation System",
+        "UX Design", "UI Engineering", "Interaction Design", "Agile", "Scrum", "Disruptiv", "User Agency",
+        "DevOps", "Microservices", "API First", "WebAssembly", "PWA","Game Engine", "Extrameile gehen", "Soft Skills",
+        "SPA", "React", "Cybersecurity", "Blockchain", "NFT", "Wertschöpfungskette", "Transformation", "Worldbuilding",
+        "Metaverse", "AR", "Digital Twin", "VR", "Low-Code", "No-Code", "Gamification", "Content", "Gatekeeping",
+        "Sustainable IT", "Accessibility", "Responsive Design", "Containerization", "Docker", "Storytelling",
+        "IoT", "HCI", "NLP", "Computer Vision", "Headless CMS", "Persona", "Stakeholder", "Experience",
+        "Serverless", "Full-Stack", "Design System", "User Research", "Prototyping", "Customer Journey",
+        "Wireframing", "Scrum Master", "Product Owner", "Sprint", "CI", "Use Case", "Auf Augenhöhe", "Alignment",
+        "Git Workflow", "State Management", "Web Performance", "SEO", "Data Visualization", "Extrameile gehen", "Black Box"
     ];
 
     // --- Hilfsfunktionen ---
