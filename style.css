@@ -1,123 +1,154 @@
-/* Generelle Styles */
+/* Generelle Styles - Dark Theme */
 body {
-    font-family: sans-serif;
+    /* Moderner Font-Stack */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    /* Dunkler Hintergrund */
+    background-color: #222831; /* Dunkles Blaugrau */
+    /* Heller Text für Kontrast */
+    color: #eeeeee;
     line-height: 1.6;
+    min-height: 100vh; /* Sicherstellen, dass der Hintergrund die ganze Höhe einnimmt */
+    box-sizing: border-box;
 }
 
 h1, h2 {
     text-align: center;
-    color: #2c3e50;
 }
 
 h1 {
     margin-bottom: 5px;
+    /* Akzentfarbe für Hauptüberschrift */
+    color: #00adb5; /* Lebhaftes Teal */
+    font-weight: 600;
 }
 
 h2 {
     margin-top: 0;
     margin-bottom: 30px;
-    font-weight: normal;
+    font-weight: 300; /* Leichtere Schrift */
     font-size: 1.2em;
-    color: #7f8c8d;
+    /* Subtilere Textfarbe für Unterüberschrift */
+    color: #adb5bd; /* Helles Grau */
 }
 
-/* Bingo-Board Styling */
+/* Bingo-Board Styling - Dark Theme */
 #bingo-board {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 Spalten */
-    gap: 5px; /* Kleiner Abstand zwischen Zellen */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px; /* Etwas mehr Abstand */
     width: 90%;
-    max-width: 600px; /* Maximale Breite für größere Bildschirme */
-    margin-bottom: 20px;
-    border: 2px solid #3498db;
-    background-color: #ecf0f1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    aspect-ratio: 1 / 1; /* Sorgt dafür, dass das Board quadratisch bleibt */
+    max-width: 600px;
+    margin-bottom: 25px;
+    /* Etwas hellerer Hintergrund für das Board */
+    background-color: #31363F; /* Dunkleres Grau */
+    /* Rand entfernt, stattdessen Schatten für Tiefe */
+    border: none;
+    border-radius: 8px; /* Abgerundete Ecken */
+    /* Subtiler Schatten */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling der einzelnen Bingo-Zellen */
+/* Styling der einzelnen Bingo-Zellen - Dark Theme */
 .bingo-cell {
-    background-color: #fff;
-    border: 1px solid #bdc3c7;
+    /* Heller als Board-BG, dunkler als Haupttext */
+    background-color: #393E46; /* Mittleres Grau */
+    /* Rand entfernt, Trennung durch 'gap' */
+    border: none;
+    border-radius: 6px; /* Abgerundete Ecken (etwas weniger als Board) */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5px; /* Innenabstand */
-    font-size: clamp(0.6rem, 2.5vw, 1rem); /* Responsive Schriftgröße */
+    padding: 8px; /* Angepasstes Padding */
+    aspect-ratio: 1 / 1;
+    font-size: clamp(0.7rem, 3vw, 1rem);
+    line-height: 1.2;
+    font-weight: 400;
+    color: #eeeeee; /* Heller Text */
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
-    overflow: hidden; /* Verhindert Textüberlauf bei sehr langen Wörtern */
-    word-break: break-word; /* Bricht lange Wörter um */
-    hyphens: auto; /* Automatische Silbentrennung */
-    user-select: none; /* Verhindert Textauswahl beim Klicken */
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+    overflow: hidden;
+    word-break: break-word;
+    hyphens: auto;
+    user-select: none;
+}
+
+.bingo-cell:hover {
+    background-color: #4f5b66; /* Leichter Hover-Effekt */
 }
 
 .bingo-cell:active {
-    transform: scale(0.95); /* Kleiner Effekt beim Klicken */
+    transform: scale(0.96); /* Angepasster Klick-Effekt */
 }
 
-/* Styling für markierte Zellen */
+/* Styling für markierte Zellen - Dark Theme */
 .bingo-cell.marked {
-    background-color: #3498db; /* Blaue Markierung */
-    color: white;
-    font-weight: bold;
-    text-decoration: line-through; /* Durchstreichen */
-    text-decoration-color: #e74c3c;
-    text-decoration-thickness: 2px;
+    background-color: #00adb5; /* Akzentfarbe (Teal) */
+    color: #ffffff; /* Heller Text für besten Kontrast auf Teal */
+    font-weight: 600; /* Fetter für Hervorhebung */
+    /* Linie entfernt für cleaneren Look, Farbe reicht zur Markierung */
+    text-decoration: none;
 }
 
-/* Button Styling */
+/* Button Styling - Dark Theme */
 #reset-button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 1em;
+    font-weight: 500;
     color: white;
-    background-color: #e74c3c;
+    background-color: #d9534f; /* Kontrastierendes Rot für Reset */
     border: none;
-    border-radius: 5px;
+    border-radius: 6px; /* Abgerundete Ecken */
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 15px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 #reset-button:hover {
-    background-color: #c0392b;
+    background-color: #c9302c; /* Dunkleres Rot beim Hover */
 }
 
-/* Info Text */
+#reset-button:active {
+    transform: scale(0.98); /* Klick-Effekt */
+}
+
+/* Info Text - Dark Theme */
 .info {
     font-size: 0.9em;
-    color: #555;
+    color: #adb5bd; /* Subtilere Textfarbe */
     text-align: center;
     max-width: 600px;
 }
 
-/* Responsive Anpassungen für kleinere Bildschirme */
+/* Responsive Anpassungen - Dark Theme */
 @media (max-width: 480px) {
     body {
-        padding: 10px;
+        padding: 15px; /* Etwas mehr Padding auf Mobile */
     }
     h1 {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
     h2 {
-        font-size: 1em;
+        font-size: 1.1em;
+        margin-bottom: 20px;
     }
     #bingo-board {
         width: 95%;
-        gap: 3px;
+        gap: 4px; /* Abstand angepasst */
+        margin-bottom: 20px;
     }
-    /* .bingo-cell {
-       font-size: 0.7em;  /* Kleinere Schrift auf Mobilgeräten - clamp() macht das schon gut */
-    /* } */
+    .bingo-cell {
+        padding: 6px; /* Padding leicht reduziert, da Schriftgröße skaliert */
+        border-radius: 4px; /* Kleinere Rundung */
+    }
     #reset-button {
-        padding: 8px 15px;
-        font-size: 0.9em;
+        padding: 10px 20px;
+        font-size: 0.95em;
     }
 }
