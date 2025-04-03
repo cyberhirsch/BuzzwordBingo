@@ -126,6 +126,22 @@ h2 {
     max-width: 600px;
 }
 
+/* Styling für die Attributionszeile */
+.attribution {
+    position: fixed; /* Fixiert die Position relativ zum Viewport */
+    bottom: 0;       /* Platziert sie am unteren Rand */
+    left: 0;         /* Beginnt am linken Rand */
+    width: 100%;     /* Nimmt die volle Breite ein */
+    background-color: #222831; /* Hintergrundfarbe (passend zum Body) für Lesbarkeit */
+    padding: 5px 0;  /* Etwas Innenabstand oben/unten */
+    box-sizing: border-box; /* Padding wird in die Breite eingerechnet */
+    font-size: 0.8em;
+    color: #adb5bd;
+    text-align: center;
+    z-index: 10;     /* Stellt sicher, dass es über anderem Inhalt liegt (falls nötig) */
+    border-top: 1px solid #393E46; /* Optional: eine feine Trennlinie oben */
+}
+
 /* Responsive Anpassungen - Dark Theme */
 @media (max-width: 480px) {
     body {
