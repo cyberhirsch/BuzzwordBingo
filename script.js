@@ -8,17 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Buzzwords & Anglizismen für Medieninformatik ---
     // Wähle mehr als 25 aus, damit jedes Spiel anders ist
     const buzzwordsPool = [
-        "KI", "Machine Learning", "Deep Learning", "Generative AI", "Prompt Engineering", "Vibe Coding", "Storyboarding",
-        "LLM", "Cloud Native", "Edge Computing", "Big Data", "Data Science", "Synergieeffekte", "Reputation System",
-        "UX Design", "UI Engineering", "Interaction Design", "Agile", "Scrum", "Disruptiv", "User Agency",
-        "DevOps", "Microservices", "API First", "WebAssembly", "PWA","Game Engine", "Extrameile gehen", "Soft Skills",
-        "SPA", "React", "Cybersecurity", "Blockchain", "NFT", "Wertschöpfungskette", "Transformation", "Worldbuilding",
-        "Metaverse", "AR", "Digital Twin", "VR", "Low-Code", "No-Code", "Gamification", "Content", "Gatekeeping",
-        "Sustainable IT", "Accessibility", "Responsive Design", "Containerization", "Docker", "Storytelling",
-        "IoT", "HCI", "NLP", "Computer Vision", "Headless CMS", "Persona", "Stakeholder", "Experience",
-        "Serverless", "Full-Stack", "Design System", "User Research", "Prototyping", "Customer Journey",
-        "Wireframing", "Scrum Master", "Product Owner", "Sprint", "CI", "Use Case", "Auf Augenhöhe", "Alignment",
-        "Git Workflow", "State Management", "Web Performance", "SEO", "Data Visualization", "Extrameile gehen", "Black Box"
+        "User-zentriert", "Intuitive Usability", "State-of-the-Art", "Seamless Experience", "Visuelles Storytelling",
+        "Below the Fold", "Above the Fold", "Mobile First", "Clean & Crisp", "Whitespace nutzen",
+        "Best Practice", "Out of the Box", "Paradigmawechsel", "Synergieeffekte", "Design Thinking",
+        "Customer Journey", "Touchpoint", "Mockup", "Prototyp", "Iterativer Prozess",
+        "Kreatives Brainstorming", "Disruptives Potenzial", "USP",
+        "Corporate Identity", "Brand Awareness", "Look and Feel", "Pixel-perfect", "Onboarding-Flow",
+        "Call to Action", "Conversion Rate", "A/B-Testing", "Usability-Test", "User Feedback",
+        "Zielgruppenanalyse", "Persona", "Moodboard erstellen", "Styleguide definieren",
+        "Responsive Design", "Barrierefreiheit", "Content is King", "Mobile Optimierung",
+        "User Interface (UI)", "User Experience", "Gamification-Ansatz", "Microinteractions",
+        "Dark Mode", "Flat Design", "Skeuomorphismus", "Minimalismus", "Bold Typography",
+        "Hero Section", "Above the Fold", "Below the Fold", "Whitespace",
+        "Content-Strategie", "Visuelle Hierarchie", "Eyetracking-Studie", "Heatmap-Analyse",
+        "Frictionless Experience", "Value Proposition", "Elevator Pitch", "Proof of Concept",
+        "Going the Extra Mile", "Quick Win", "Low Hanging Fruits", "Think outside the box",
+        "Agiles Vorgehen", "Sprint-Planung", "Stakeholder-Meeting", "Auf Augenhöhe kommunizieren",
+        "Best of Breed", "Cutting Edge", "Game Changer", "Next Level", "Holistic Approach", "KI", "Machine Learning", "Deep Learning",
+        "Generative AI", "Prompt Engineering", "Vibe Coding", "Storyboarding"
     ];
 
     // --- Hilfsfunktionen ---
